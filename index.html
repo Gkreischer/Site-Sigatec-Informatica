@@ -1,0 +1,4285 @@
+<!doctype html>
+<html class="dark scroll-smooth" lang="pt-BR" style="">
+  <svg
+    class="inline-defs-container"
+    aria-hidden="true"
+    style="position: absolute; width: 0; height: 0; overflow: hidden"
+  ></svg
+  ><head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e1e4",
+              secondary: "#71d2ff",
+              "surface-card-glass": "rgba(30, 30, 34, 0.72)",
+              "on-tertiary-container": "#54595e",
+              "secondary-container": "#03b5ed",
+              "surface-card": "#1E1E22",
+              "surface-tint": "#eac300",
+              outline: "#999078",
+              primary: "#ffecae",
+              "tertiary-fixed": "#dfe3e9",
+              "outline-variant": "#4d4632",
+              "primary-fixed-dim": "#eac300",
+              tertiary: "#e8ecf2",
+              "surface-container-high": "#2a2a2c",
+              "surface-bright": "#39393b",
+              "surface-container-highest": "#353437",
+              "on-background": "#e5e1e4",
+              "on-secondary-fixed-variant": "#004d66",
+              "text-primary": "#FFFFFF",
+              "secondary-fixed": "#c0e8ff",
+              "on-secondary": "#003548",
+              background: "#131315",
+              "inverse-primary": "#705d00",
+              "surface-dim": "#131315",
+              "brand-gradient-end": "#00B5EC",
+              "on-error": "#690005",
+              "on-error-container": "#ffdad6",
+              "error-container": "#93000a",
+              surface: "#131315",
+              "on-secondary-fixed": "#001e2b",
+              "surface-variant": "#353437",
+              "inverse-on-surface": "#303032",
+              "surface-container-lowest": "#0e0e10",
+              "primary-container": "#f5cd11",
+              "text-muted": "#9CA3AF",
+              "on-primary-fixed-variant": "#554500",
+              "border-subtle": "#2A2A30",
+              "border-active": "#3F3F46",
+              "on-primary-fixed": "#221b00",
+              "tertiary-fixed-dim": "#c3c7cd",
+              "on-primary-container": "#6a5700",
+              "surface-container": "#201f21",
+              "on-tertiary-fixed": "#171c20",
+              "primary-fixed": "#ffe174",
+              "brand-gradient-start": "#F5CD11",
+              error: "#ffb4ab",
+              "secondary-fixed-dim": "#71d2ff",
+              "on-secondary-container": "#004359",
+              "on-surface-variant": "#d0c6ab",
+              "on-tertiary-fixed-variant": "#43474c",
+              "on-surface": "#e5e1e4",
+              "on-primary": "#3b2f00",
+              "on-tertiary": "#2c3136",
+              "tertiary-container": "#ccd0d6",
+              "surface-container-low": "#1b1b1d",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              margin: "2rem",
+              "space-sm": "0.5rem",
+              "space-xs": "0.25rem",
+              gutter: "1.5rem",
+              "space-xl": "2.5rem",
+              "gutter-mobile": "1rem",
+              "space-lg": "1.5rem",
+              "margin-mobile": "1.25rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "label-uppercase": ["Montserrat"],
+              "headline-md": ["Montserrat"],
+              "display-hero": ["Montserrat"],
+              "headline-sm": ["Montserrat"],
+              "body-md": ["Inter"],
+              "headline-lg-mobile": ["Montserrat"],
+              "body-lg": ["Inter"],
+              "code-mono": ["monospace"],
+              "headline-lg": ["Montserrat"],
+              "button-text": ["Montserrat"],
+              "title-card": ["Montserrat"],
+              "display-hero-mobile": ["Montserrat"],
+              "body-sm": ["Inter"],
+            },
+            fontSize: {
+              "label-uppercase": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.15em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-hero": [
+                "clamp(2.6rem, 5vw, 3.0625rem)",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-sm": [
+                "20px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "0em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "0em",
+                  fontWeight: "400",
+                },
+              ],
+              "code-mono": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": [
+                "clamp(2rem, 5vw, 3.0625rem)",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "button-text": [
+                "clamp(0.8rem, 5vw, 0.9rem)",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-card": [
+                "18px",
+                {
+                  lineHeight: "24px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-hero-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-sm": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0em",
+                  fontWeight: "400",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container text-white"
+  >
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)] border-b border-border-subtle"
+    >
+      <div
+        class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md">
+          <img
+            alt="SIGATEC Informática Logo"
+            class="h-9 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGdW0rz6sBbADzT2j8dZ_ub9d53oBzKYQl-LTHk2by3OnWBUhiHbRYG0-tYKmo6-kt-ZmAycKbWd-0okBFgbTvu1vIr5gtImDh6YQEcYhyf0lT22CuXE_5LBa4ODazCdApVSu2qiuMcuWmgg77g8CGBM21tiGWkwDFevAYCYxtoi2p5DLnvxWa72mCkv2q1Odd1G7fz9v9Tde-hLAQNtZ1YIUidGwlhWjh90iRnJUEjK2nndYOOl1G1E2MFb7iQLuGFc8"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold"
+              >SIGATEC</span
+            ><span
+              class="font-label-uppercase text-[11px] text-secondary tracking-widest"
+              >INFORMÁTICA</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden xl:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low/60 backdrop-blur-md"
+        >
+          <a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+            data-path="inicio"
+            href="#inicio"
+            >Início</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+            data-path="sobre-nos"
+            href="#sobre-nos"
+            >Sobre Nós</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+            data-path="servicos-de-ti"
+            href="#servicos"
+            >Serviços de TI</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+            data-path="diferenciais"
+            href="#diferenciais"
+            >Diferenciais</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+            data-path="depoimentos"
+            href="#depoimentos"
+            >Depoimentos</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-button-text text-button-text text-secondary hover:text-primary transition-all flex items-center gap-1"
+            data-path="localizacao"
+            href="#localizacao"
+            ><span class="material-symbols-outlined text-[16px]"
+              >location_on</span
+            >Localização</a
+          ><a
+            class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-button-text text-xs uppercase tracking-wider hover:brightness-110 hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(245,205,17,0.3)] font-bold whitespace-nowrap"
+            href="#contato"
+            >Solicitar Orçamento</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md"></div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION -->
+        <section
+          class="relative w-full overflow-hidden py-space-xl lg:py-24 bg-surface-container-lowest"
+          id="inicio"
+        >
+          <div
+            class="absolute inset-0 bg-surface-container-lowest/80 backdrop-blur-[1px] pointer-events-none z-0"
+          ></div>
+          <div
+            class="absolute inset-0 pointer-events-none overflow-hidden z-0"
+            aria-hidden="true"
+          >
+            <style class="">
+              @keyframes circuitDashA {
+                0% {
+                  stroke-dashoffset: 1600;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashB {
+                0% {
+                  stroke-dashoffset: 1400;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashFast {
+                0% {
+                  stroke-dashoffset: 1000;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes cyberPulse {
+                0%,
+                100% {
+                  opacity: 0.35;
+                  transform: scale(0.9);
+                }
+                50% {
+                  opacity: 1;
+                  transform: scale(1.4);
+                }
+              }
+              @keyframes chipGlow {
+                0%,
+                100% {
+                  filter: drop-shadow(0 0 4px #00b5ec80);
+                }
+                50% {
+                  filter: drop-shadow(0 0 16px #f5cd11cc);
+                }
+              }
+              .tech-circuit-line {
+                stroke-dasharray: 180 320;
+                animation: circuitDashA 11s linear infinite;
+              }
+              .tech-circuit-line-fast {
+                stroke-dasharray: 100 240;
+                animation: circuitDashFast 6.5s linear infinite;
+              }
+              .tech-circuit-line-b {
+                stroke-dasharray: 140 280;
+                animation: circuitDashB 9s linear infinite;
+              }
+              .tech-pulse-node {
+                animation: cyberPulse 2.8s ease-in-out infinite;
+                transform-origin: center;
+                transform-box: fill-box;
+              }</style
+            ><svg
+              class="absolute inset-0 w-full h-full opacity-60"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="glowCyan"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="2.5"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <filter
+                  id="glowAmber"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="3"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <pattern
+                  id="cyber-grid"
+                  width="48"
+                  height="48"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    d="M 48 0 L 0 0 0 48"
+                    fill="none"
+                    stroke="#71d2ff"
+                    stroke-width="0.8"
+                    stroke-opacity="0.35"
+                  ></path>
+                  <circle
+                    cx="48"
+                    cy="0"
+                    r="1.5"
+                    fill="#f5cd11"
+                    fill-opacity="0.6"
+                  ></circle>
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="0.8"
+                    fill="#00B5EC"
+                    fill-opacity="0.3"
+                  ></circle>
+                </pattern>
+                <linearGradient
+                  id="lineGradCyan"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#71D2FF"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="lineGradAmber"
+                  x1="100%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#FFE174"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <radialGradient id="coreGlow" cx="50%" cy="35%" r="55%">
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.22"
+                  ></stop>
+                  <stop
+                    offset="40%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.12"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#131315"
+                    stop-opacity="0"
+                  ></stop>
+                </radialGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#cyber-grid)"></rect>
+              <rect width="100%" height="100%" fill="url(#coreGlow)"></rect>
+              <g filter="url(#glowCyan)">
+                <path
+                  class="tech-circuit-line"
+                  d="M -100 120 L 280 120 L 360 200 L 780 200 L 860 120 L 1500 120"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2.2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 150 -50 L 150 280 L 230 360 L 520 360 L 580 420 L 820 420"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M -80 480 L 180 480 L 260 560 L 640 560 L 720 480 L 1140 480"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 420 -40 L 420 100 L 490 170 L 620 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.6"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 900 -50 L 900 110 L 960 170 L 1320 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 650 620 L 800 620 L 870 550 L 1200 550"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+              </g>
+              <g filter="url(#glowAmber)">
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M -50 340 L 220 340 L 300 420 L 640 420 L 720 340 L 1100 340 L 1180 420 L 1600 420"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2.4"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 1120 -60 L 1120 160 L 1050 230 L 1050 480 L 1110 540 L 1450 540"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 50 60 L 190 60 L 250 120 L 340 120"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 600 -40 L 600 80 L 670 150 L 840 150 L 890 200"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 350 500 L 480 500 L 540 440 L 700 440"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 1250 220 L 1320 290 L 1520 290"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+              </g>
+              <g>
+                <g class="tech-pulse-node">
+                  <circle cx="360" cy="200" r="5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="360"
+                    cy="200"
+                    r="11"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.2s">
+                  <circle cx="780" cy="200" r="5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="780"
+                    cy="200"
+                    r="12"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.7s">
+                  <circle cx="300" cy="420" r="5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="300"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="2"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2s">
+                  <circle cx="720" cy="340" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="720"
+                    cy="340"
+                    r="12"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.6s">
+                  <circle cx="1050" cy="230" r="4.5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="1050"
+                    cy="230"
+                    r="10"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.4s">
+                  <circle cx="230" cy="360" r="4.5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="230"
+                    cy="360"
+                    r="9"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.5"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.9s">
+                  <circle cx="580" cy="420" r="4.5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="580"
+                    cy="420"
+                    r="10"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.1s">
+                  <circle cx="960" cy="170" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="960"
+                    cy="170"
+                    r="9"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2.4s">
+                  <circle cx="1180" cy="420" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="1180"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.9s">
+                  <circle cx="260" cy="560" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="260"
+                    cy="560"
+                    r="8"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.4"
+                    opacity="0.6"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.7s">
+                  <circle cx="670" cy="150" r="4" fill="#F5CD11"></circle>
+                  <circle
+                    cx="670"
+                    cy="150"
+                    r="8"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- Ambient Tech Glows -->
+          <div
+            class="absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-primary-container/10 blur-[120px] pointer-events-none"
+          >
+            <style class="">
+              @keyframes circuitDashA {
+                0% {
+                  stroke-dashoffset: 1600;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashB {
+                0% {
+                  stroke-dashoffset: 1400;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashFast {
+                0% {
+                  stroke-dashoffset: 1000;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes cyberPulse {
+                0%,
+                100% {
+                  opacity: 0.35;
+                  transform: scale(0.9);
+                }
+                50% {
+                  opacity: 1;
+                  transform: scale(1.4);
+                }
+              }
+              @keyframes chipGlow {
+                0%,
+                100% {
+                  filter: drop-shadow(0 0 4px #00b5ec80);
+                }
+                50% {
+                  filter: drop-shadow(0 0 16px #f5cd11cc);
+                }
+              }
+              .tech-circuit-line {
+                stroke-dasharray: 180 320;
+                animation: circuitDashA 11s linear infinite;
+              }
+              .tech-circuit-line-fast {
+                stroke-dasharray: 100 240;
+                animation: circuitDashFast 6.5s linear infinite;
+              }
+              .tech-circuit-line-b {
+                stroke-dasharray: 140 280;
+                animation: circuitDashB 9s linear infinite;
+              }
+              .tech-pulse-node {
+                animation: cyberPulse 2.8s ease-in-out infinite;
+                transform-origin: center;
+                transform-box: fill-box;
+              }</style
+            ><svg
+              class="absolute inset-0 w-full h-full opacity-60"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="glowCyan"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="2.5"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <filter
+                  id="glowAmber"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="3"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <pattern
+                  id="cyber-grid"
+                  width="48"
+                  height="48"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    d="M 48 0 L 0 0 0 48"
+                    fill="none"
+                    stroke="#71d2ff"
+                    stroke-width="0.8"
+                    stroke-opacity="0.35"
+                  ></path>
+                  <circle
+                    cx="48"
+                    cy="0"
+                    r="1.5"
+                    fill="#f5cd11"
+                    fill-opacity="0.6"
+                  ></circle>
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="0.8"
+                    fill="#00B5EC"
+                    fill-opacity="0.3"
+                  ></circle>
+                </pattern>
+                <linearGradient
+                  id="lineGradCyan"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#71D2FF"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="lineGradAmber"
+                  x1="100%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#FFE174"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <radialGradient id="coreGlow" cx="50%" cy="35%" r="55%">
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.22"
+                  ></stop>
+                  <stop
+                    offset="40%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.12"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#131315"
+                    stop-opacity="0"
+                  ></stop>
+                </radialGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#cyber-grid)"></rect>
+              <rect width="100%" height="100%" fill="url(#coreGlow)"></rect>
+              <g filter="url(#glowCyan)">
+                <path
+                  class="tech-circuit-line"
+                  d="M -100 120 L 280 120 L 360 200 L 780 200 L 860 120 L 1500 120"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2.2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 150 -50 L 150 280 L 230 360 L 520 360 L 580 420 L 820 420"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M -80 480 L 180 480 L 260 560 L 640 560 L 720 480 L 1140 480"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 420 -40 L 420 100 L 490 170 L 620 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.6"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 900 -50 L 900 110 L 960 170 L 1320 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 650 620 L 800 620 L 870 550 L 1200 550"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+              </g>
+              <g filter="url(#glowAmber)">
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M -50 340 L 220 340 L 300 420 L 640 420 L 720 340 L 1100 340 L 1180 420 L 1600 420"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2.4"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 1120 -60 L 1120 160 L 1050 230 L 1050 480 L 1110 540 L 1450 540"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 50 60 L 190 60 L 250 120 L 340 120"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 600 -40 L 600 80 L 670 150 L 840 150 L 890 200"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 350 500 L 480 500 L 540 440 L 700 440"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 1250 220 L 1320 290 L 1520 290"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+              </g>
+              <g>
+                <g class="tech-pulse-node">
+                  <circle cx="360" cy="200" r="5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="360"
+                    cy="200"
+                    r="11"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.2s">
+                  <circle cx="780" cy="200" r="5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="780"
+                    cy="200"
+                    r="12"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.7s">
+                  <circle cx="300" cy="420" r="5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="300"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="2"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2s">
+                  <circle cx="720" cy="340" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="720"
+                    cy="340"
+                    r="12"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.6s">
+                  <circle cx="1050" cy="230" r="4.5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="1050"
+                    cy="230"
+                    r="10"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.4s">
+                  <circle cx="230" cy="360" r="4.5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="230"
+                    cy="360"
+                    r="9"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.5"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.9s">
+                  <circle cx="580" cy="420" r="4.5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="580"
+                    cy="420"
+                    r="10"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.1s">
+                  <circle cx="960" cy="170" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="960"
+                    cy="170"
+                    r="9"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2.4s">
+                  <circle cx="1180" cy="420" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="1180"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.9s">
+                  <circle cx="260" cy="560" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="260"
+                    cy="560"
+                    r="8"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.4"
+                    opacity="0.6"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.7s">
+                  <circle cx="670" cy="150" r="4" fill="#F5CD11"></circle>
+                  <circle
+                    cx="670"
+                    cy="150"
+                    r="8"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="absolute top-1/3 -right-24 h-96 w-96 rounded-full bg-secondary-container/15 blur-[140px] pointer-events-none"
+          >
+            <style class="">
+              @keyframes circuitDashA {
+                0% {
+                  stroke-dashoffset: 1600;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashB {
+                0% {
+                  stroke-dashoffset: 1400;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes circuitDashFast {
+                0% {
+                  stroke-dashoffset: 1000;
+                }
+                100% {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes cyberPulse {
+                0%,
+                100% {
+                  opacity: 0.35;
+                  transform: scale(0.9);
+                }
+                50% {
+                  opacity: 1;
+                  transform: scale(1.4);
+                }
+              }
+              @keyframes chipGlow {
+                0%,
+                100% {
+                  filter: drop-shadow(0 0 4px #00b5ec80);
+                }
+                50% {
+                  filter: drop-shadow(0 0 16px #f5cd11cc);
+                }
+              }
+              .tech-circuit-line {
+                stroke-dasharray: 180 320;
+                animation: circuitDashA 11s linear infinite;
+              }
+              .tech-circuit-line-fast {
+                stroke-dasharray: 100 240;
+                animation: circuitDashFast 6.5s linear infinite;
+              }
+              .tech-circuit-line-b {
+                stroke-dasharray: 140 280;
+                animation: circuitDashB 9s linear infinite;
+              }
+              .tech-pulse-node {
+                animation: cyberPulse 2.8s ease-in-out infinite;
+                transform-origin: center;
+                transform-box: fill-box;
+              }</style
+            ><svg
+              class="absolute inset-0 w-full h-full opacity-60"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="glowCyan"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="2.5"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <filter
+                  id="glowAmber"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur
+                    stdDeviation="3"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <pattern
+                  id="cyber-grid"
+                  width="48"
+                  height="48"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    d="M 48 0 L 0 0 0 48"
+                    fill="none"
+                    stroke="#71d2ff"
+                    stroke-width="0.8"
+                    stroke-opacity="0.35"
+                  ></path>
+                  <circle
+                    cx="48"
+                    cy="0"
+                    r="1.5"
+                    fill="#f5cd11"
+                    fill-opacity="0.6"
+                  ></circle>
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="0.8"
+                    fill="#00B5EC"
+                    fill-opacity="0.3"
+                  ></circle>
+                </pattern>
+                <linearGradient
+                  id="lineGradCyan"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#71D2FF"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="lineGradAmber"
+                  x1="100%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#FFE174"
+                    stop-opacity="0.95"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <radialGradient id="coreGlow" cx="50%" cy="35%" r="55%">
+                  <stop
+                    offset="0%"
+                    stop-color="#00B5EC"
+                    stop-opacity="0.22"
+                  ></stop>
+                  <stop
+                    offset="40%"
+                    stop-color="#F5CD11"
+                    stop-opacity="0.12"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#131315"
+                    stop-opacity="0"
+                  ></stop>
+                </radialGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#cyber-grid)"></rect>
+              <rect width="100%" height="100%" fill="url(#coreGlow)"></rect>
+              <g filter="url(#glowCyan)">
+                <path
+                  class="tech-circuit-line"
+                  d="M -100 120 L 280 120 L 360 200 L 780 200 L 860 120 L 1500 120"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2.2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 150 -50 L 150 280 L 230 360 L 520 360 L 580 420 L 820 420"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M -80 480 L 180 480 L 260 560 L 640 560 L 720 480 L 1140 480"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 420 -40 L 420 100 L 490 170 L 620 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.6"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 900 -50 L 900 110 L 960 170 L 1320 170"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 650 620 L 800 620 L 870 550 L 1200 550"
+                  fill="none"
+                  stroke="url(#lineGradCyan)"
+                  stroke-width="1.8"
+                ></path>
+              </g>
+              <g filter="url(#glowAmber)">
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M -50 340 L 220 340 L 300 420 L 640 420 L 720 340 L 1100 340 L 1180 420 L 1600 420"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2.4"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 1120 -60 L 1120 160 L 1050 230 L 1050 480 L 1110 540 L 1450 540"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 50 60 L 190 60 L 250 120 L 340 120"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-b"
+                  d="M 600 -40 L 600 80 L 670 150 L 840 150 L 890 200"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="1.8"
+                ></path>
+                <path
+                  class="tech-circuit-line-fast"
+                  d="M 350 500 L 480 500 L 540 440 L 700 440"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+                <path
+                  class="tech-circuit-line"
+                  d="M 1250 220 L 1320 290 L 1520 290"
+                  fill="none"
+                  stroke="url(#lineGradAmber)"
+                  stroke-width="2"
+                ></path>
+              </g>
+              <g>
+                <g class="tech-pulse-node">
+                  <circle cx="360" cy="200" r="5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="360"
+                    cy="200"
+                    r="11"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.2s">
+                  <circle cx="780" cy="200" r="5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="780"
+                    cy="200"
+                    r="12"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.7s">
+                  <circle cx="300" cy="420" r="5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="300"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="2"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2s">
+                  <circle cx="720" cy="340" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="720"
+                    cy="340"
+                    r="12"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.6s">
+                  <circle cx="1050" cy="230" r="4.5" fill="#00B5EC"></circle>
+                  <circle
+                    cx="1050"
+                    cy="230"
+                    r="10"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.8"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.4s">
+                  <circle cx="230" cy="360" r="4.5" fill="#71D2FF"></circle>
+                  <circle
+                    cx="230"
+                    cy="360"
+                    r="9"
+                    fill="none"
+                    stroke="#71D2FF"
+                    stroke-width="1.5"
+                    opacity="0.7"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.9s">
+                  <circle cx="580" cy="420" r="4.5" fill="#F5CD11"></circle>
+                  <circle
+                    cx="580"
+                    cy="420"
+                    r="10"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.8"
+                    opacity="0.75"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.1s">
+                  <circle cx="960" cy="170" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="960"
+                    cy="170"
+                    r="9"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 2.4s">
+                  <circle cx="1180" cy="420" r="5" fill="#FFE174"></circle>
+                  <circle
+                    cx="1180"
+                    cy="420"
+                    r="11"
+                    fill="none"
+                    stroke="#FFE174"
+                    stroke-width="1.8"
+                    opacity="0.8"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 0.9s">
+                  <circle cx="260" cy="560" r="4" fill="#00B5EC"></circle>
+                  <circle
+                    cx="260"
+                    cy="560"
+                    r="8"
+                    fill="none"
+                    stroke="#00B5EC"
+                    stroke-width="1.4"
+                    opacity="0.6"
+                  ></circle>
+                </g>
+                <g class="tech-pulse-node" style="animation-delay: 1.7s">
+                  <circle cx="670" cy="150" r="4" fill="#F5CD11"></circle>
+                  <circle
+                    cx="670"
+                    cy="150"
+                    r="8"
+                    fill="none"
+                    stroke="#F5CD11"
+                    stroke-width="1.5"
+                    opacity="0.65"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center"
+            >
+              <!-- Text & Action Content -->
+              <div
+                class="lg:col-span-7 flex flex-col items-start gap-space-lg drop-shadow-md"
+              >
+                <!-- Top Tag / Status Pill -->
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high border border-border-subtle shadow-sm"
+                >
+                  <span
+                    class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"
+                  ></span>
+                  <span
+                    class="font-label-uppercase text-label-uppercase text-primary-fixed-dim tracking-wider uppercase"
+                    >Mais de 29 Anos de Tradição em Rio das Ostras e
+                    Região</span
+                  >
+                </div>
+                <!-- Main Hero Title -->
+                <h1
+                  class="font-display-hero text-display-hero uppercase tracking-tight text-text-primary"
+                >
+                  TECNOLOGIA DE PONTA E <br />
+                  <span
+                    class="bg-gradient-to-r from-brand-gradient-start via-primary to-brand-gradient-end bg-clip-text text-transparent"
+                  >
+                    SUPORTE ESPECIALIZADO
+                  </span>
+                  <br />
+                  PARA O SEU NEGÓCIO
+                </h1>
+                <!-- Subtitle -->
+                <p
+                  class="font-body-lg text-body-lg max-w-2xl leading-relaxed text-white"
+                >
+                  Tradição &amp; Confiança em Rio das Ostras: Mais de 29 anos
+                  cuidando da sua tecnologia. Assistência técnica especializada
+                  em computadores, notebooks e smartphones, venda de hardware,
+                  periféricos, suprimentos para impressão e soluções completas
+                  de rede.
+                </p>
+                <!-- CTAs -->
+                <div
+                  class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto"
+                >
+                  <a
+                    class="inline-flex items-center justify-center px-space-xl py-4 rounded-xl bg-primary-container text-on-primary-container font-button-text text-button-text uppercase tracking-wider shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all font-bold"
+                    href="#diagnostico-ti"
+                    style="color: rgb(18, 18, 20) !important"
+                  >
+                    <span class="material-symbols-outlined mr-2 text-[20px]"
+                      >bolt</span
+                    >
+                    Solicitar Orçamento Rápido
+                  </a>
+                </div>
+                <!-- Assurance Badges Grid -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm w-full pt-space-md"
+                >
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low border border-border-subtle shadow-sm"
+                  >
+                    <div
+                      class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >verified_user</span
+                      >
+                    </div>
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-on-surface"
+                      >Atendimento Rápido e Seguro</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low border border-border-subtle shadow-sm"
+                  >
+                    <div
+                      class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >workspace_premium</span
+                      >
+                    </div>
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-on-surface"
+                      >Profissionais capacitadoas</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Interactive Visual Dashboard & Metrics Column -->
+              <div class="lg:col-span-5 relative mt-space-xl lg:mt-0">
+                <div
+                  class="relative rounded-2xl bg-surface-card p-space-lg shadow-xl backdrop-blur-xl border border-border-subtle"
+                >
+                  <!-- Simulated Server Header -->
+                  <div
+                    class="flex items-center justify-between bg-surface-container-low/70 px-space-md py-space-sm rounded-xl mb-space-md border border-border-subtle/50"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-3 h-3 rounded-full bg-primary-container"
+                      ></span
+                      ><span class="w-3 h-3 rounded-full bg-secondary"></span
+                      ><span
+                        class="w-3 h-3 rounded-full bg-surface-bright"
+                      ></span>
+                    </div>
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-text-muted ps-3"
+                      >STATUS: ATENDIMENTO ATIVO</span
+                    >
+                  </div>
+                  <!-- Central Data Visualizer Image -->
+                  <div
+                    class="relative w-full h-56 rounded-xl overflow-hidden mb-space-md border border-border-subtle"
+                  >
+                    <img
+                      alt="Bancada de reparo técnico especializada da SIGATEC com ferramentas de precisão"
+                      class="w-full h-full object-cover brightness-95"
+                      src="https://lh3.googleusercontent.com/aida/AEtjO1UEQSNuGnaF-2B9G51RAkDbeFz84alGhB8OFS9DKZbdsuagrMzFv_i85SrS0pOkTDrl6c_s8qwZGUfFJhy-Q2cez6rNgFG2MgxXP5rgiZ58Il6bP8bIv22LqLnWM1kG3cjcWcq10d4scSBllCgeYcDHXBt2UFb4qYM2BlX7gqsR4nrAd2FC78nx7Vv4loDbo2H0t0bUQeaA12in9JaJ42lMbmjeqyVf7SiOucjp0UIk5chtL6KupKzQKQM"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-surface-card via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute bottom-3 left-3 flex items-center gap-2 px-space-sm py-1 rounded-lg bg-surface-dim/85 backdrop-blur-md border border-border-subtle"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[16px]"
+                        >build_circle</span
+                      ><span
+                        class="font-code-mono text-code-mono text-on-surface text-xs"
+                        >LABORATÓRIO PRÓPRIO DE REPARO</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Performance Metrics Counters -->
+                  <div
+                    class="grid grid-cols-3 gap-space-sm pt-space-xs text-center"
+                  >
+                    <div
+                      class="flex flex-col p-space-sm rounded-xl bg-surface-container-high border border-border-subtle shadow-sm"
+                    >
+                      <span
+                        class="font-headline-md text-headline-md text-primary-container font-extrabold"
+                        >+29</span
+                      ><span
+                        class="font-label-uppercase text-[11px] text-text-muted mt-1"
+                        >Anos de Tradição</span
+                      >
+                    </div>
+                    <div
+                      class="flex flex-col p-space-sm rounded-xl bg-surface-container-high border border-border-subtle shadow-sm"
+                    >
+                      <span
+                        class="font-headline-md text-headline-md text-secondary font-extrabold"
+                        >+45k</span
+                      ><span
+                        class="font-label-uppercase text-[11px] text-text-muted mt-1"
+                        >Aparelhos Reparados</span
+                      >
+                    </div>
+                    <div
+                      class="flex flex-col p-space-sm rounded-xl bg-surface-container-high border border-border-subtle shadow-sm"
+                    >
+                      <span
+                        class="font-headline-md text-headline-md text-text-primary font-extrabold"
+                        >+15k</span
+                      ><span
+                        class="font-label-uppercase text-[11px] text-text-muted mt-1"
+                        >Clientes Atendidos</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Micro Telemetry Sparkline -->
+                  <div
+                    class="mt-space-md px-space-md py-space-sm rounded-xl bg-surface-container-low border border-border-subtle flex items-center justify-between"
+                  >
+                    <div class="flex flex-col ps-2">
+                      <span
+                        class="font-label-uppercase text-label-uppercase text-on-surface"
+                        >Agilidade &amp; Garantia Técnica</span
+                      >
+                    </div>
+                    <div
+                      class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container border border-border-subtle"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >verified</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SERVIÇOS DE TI (GRID COM CARDS INTERATIVOS) -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-xl lg:py-24 border-y border-border-subtle"
+          id="servicos"
+        >
+          <div
+            class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col max-w-2xl gap-space-xs">
+                <div
+                  class="inline-flex items-center gap-space-xs text-secondary font-label-uppercase text-label-uppercase"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >terminal</span
+                  >
+                  CATÁLOGO CORPORATIVO &amp; VAREJO
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg uppercase text-text-primary"
+                >
+                  Nossas Soluções &amp; Serviços
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Infraestrutura robusta, laboratório com suporte contínuo e
+                  tecnologia sob medida para impulsionar a produtividade
+                  operacional de pessoas e empresas.
+                </p>
+              </div>
+              <a
+                class="self-start md:self-auto inline-flex items-center gap-space-xs font-button-text text-button-text text-primary-container hover:text-primary transition-colors"
+                href="#diagnostico-ti"
+              >
+                <span class="">Solicitar Orçamento Técnico</span>
+                <span class="material-symbols-outlined text-[18px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- 6 Interactive Cards Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+              <!-- Card 1: Computadores e Notebooks -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-primary-container/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >laptop_chromebook</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-primary-container"
+                      >ASSISTÊNCIA TÉCNICA ESPECIALIZADA</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Reparo e Manutenção de Computadores e Notebooks
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    ></p>
+                    <div
+                      class="flex flex-col gap-space-md"
+                      style="
+                        --tw-border-spacing-y: 0;
+                        --tw-translate-x: 0;
+                        --tw-translate-y: 0;
+                        --tw-rotate: 0;
+                        --tw-skew-x: 0;
+                        --tw-skew-y: 0;
+                        --tw-scale-x: 1;
+                        --tw-scale-y: 1;
+                        --tw-pan-x: ;
+                        --tw-pan-y: ;
+                        --tw-pinch-zoom: ;
+                        --tw-scroll-snap-strictness: proximity;
+                        --tw-gradient-from-position: ;
+                        --tw-gradient-via-position: ;
+                        --tw-gradient-to-position: ;
+                        --tw-ordinal: ;
+                        --tw-slashed-zero: ;
+                        --tw-numeric-figure: ;
+                        --tw-numeric-spacing: ;
+                        --tw-numeric-fraction: ;
+                        --tw-ring-inset: ;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-color: rgb(59 130 246 / 0.5);
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-colored: 0 0 #0000;
+                        --tw-blur: ;
+                        --tw-brightness: ;
+                        --tw-contrast: ;
+                        --tw-grayscale: ;
+                        --tw-hue-rotate: ;
+                        --tw-invert: ;
+                        --tw-saturate: ;
+                        --tw-sepia: ;
+                        --tw-drop-shadow: ;
+                        --tw-backdrop-blur: ;
+                        --tw-backdrop-brightness: ;
+                        --tw-backdrop-contrast: ;
+                        --tw-backdrop-grayscale: ;
+                        --tw-backdrop-hue-rotate: ;
+                        --tw-backdrop-invert: ;
+                        --tw-backdrop-opacity: ;
+                        --tw-backdrop-saturate: ;
+                        --tw-backdrop-sepia: ;
+                        --tw-contain-size: ;
+                        --tw-contain-layout: ;
+                        --tw-contain-paint: ;
+                        --tw-contain-style: ;
+                        color: rgb(229, 225, 228);
+                        font-size: 16px;
+                      "
+                    >
+                      <div
+                        class="flex flex-col gap-space-xs"
+                        style="
+                          --tw-border-spacing-y: 0;
+                          --tw-translate-x: 0;
+                          --tw-translate-y: 0;
+                          --tw-rotate: 0;
+                          --tw-skew-x: 0;
+                          --tw-skew-y: 0;
+                          --tw-scale-x: 1;
+                          --tw-scale-y: 1;
+                          --tw-pan-x: ;
+                          --tw-pan-y: ;
+                          --tw-pinch-zoom: ;
+                          --tw-scroll-snap-strictness: proximity;
+                          --tw-gradient-from-position: ;
+                          --tw-gradient-via-position: ;
+                          --tw-gradient-to-position: ;
+                          --tw-ordinal: ;
+                          --tw-slashed-zero: ;
+                          --tw-numeric-figure: ;
+                          --tw-numeric-spacing: ;
+                          --tw-numeric-fraction: ;
+                          --tw-ring-inset: ;
+                          --tw-ring-offset-width: 0px;
+                          --tw-ring-offset-color: #fff;
+                          --tw-ring-color: rgb(59 130 246 / 0.5);
+                          --tw-ring-offset-shadow: 0 0 #0000;
+                          --tw-ring-shadow: 0 0 #0000;
+                          --tw-shadow: 0 0 #0000;
+                          --tw-shadow-colored: 0 0 #0000;
+                          --tw-blur: ;
+                          --tw-brightness: ;
+                          --tw-contrast: ;
+                          --tw-grayscale: ;
+                          --tw-hue-rotate: ;
+                          --tw-invert: ;
+                          --tw-saturate: ;
+                          --tw-sepia: ;
+                          --tw-drop-shadow: ;
+                          --tw-backdrop-blur: ;
+                          --tw-backdrop-brightness: ;
+                          --tw-backdrop-contrast: ;
+                          --tw-backdrop-grayscale: ;
+                          --tw-backdrop-hue-rotate: ;
+                          --tw-backdrop-invert: ;
+                          --tw-backdrop-opacity: ;
+                          --tw-backdrop-saturate: ;
+                          --tw-backdrop-sepia: ;
+                          --tw-contain-size: ;
+                          --tw-contain-layout: ;
+                          --tw-contain-paint: ;
+                          --tw-contain-style: ;
+                        "
+                      >
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                          style="
+                            --tw-border-spacing-y: 0;
+                            --tw-translate-x: 0;
+                            --tw-translate-y: 0;
+                            --tw-rotate: 0;
+                            --tw-skew-x: 0;
+                            --tw-skew-y: 0;
+                            --tw-scale-x: 1;
+                            --tw-scale-y: 1;
+                            --tw-pan-x: ;
+                            --tw-pan-y: ;
+                            --tw-pinch-zoom: ;
+                            --tw-scroll-snap-strictness: proximity;
+                            --tw-gradient-from-position: ;
+                            --tw-gradient-via-position: ;
+                            --tw-gradient-to-position: ;
+                            --tw-ordinal: ;
+                            --tw-slashed-zero: ;
+                            --tw-numeric-figure: ;
+                            --tw-numeric-spacing: ;
+                            --tw-numeric-fraction: ;
+                            --tw-ring-inset: ;
+                            --tw-ring-offset-width: 0px;
+                            --tw-ring-offset-color: #fff;
+                            --tw-ring-color: rgb(59 130 246 / 0.5);
+                            --tw-ring-offset-shadow: 0 0 #0000;
+                            --tw-ring-shadow: 0 0 #0000;
+                            --tw-shadow: 0 0 #0000;
+                            --tw-shadow-colored: 0 0 #0000;
+                            --tw-blur: ;
+                            --tw-brightness: ;
+                            --tw-contrast: ;
+                            --tw-grayscale: ;
+                            --tw-hue-rotate: ;
+                            --tw-invert: ;
+                            --tw-saturate: ;
+                            --tw-sepia: ;
+                            --tw-drop-shadow: ;
+                            --tw-backdrop-blur: ;
+                            --tw-backdrop-brightness: ;
+                            --tw-backdrop-contrast: ;
+                            --tw-backdrop-grayscale: ;
+                            --tw-backdrop-hue-rotate: ;
+                            --tw-backdrop-invert: ;
+                            --tw-backdrop-opacity: ;
+                            --tw-backdrop-saturate: ;
+                            --tw-backdrop-sepia: ;
+                            --tw-contain-size: ;
+                            --tw-contain-layout: ;
+                            --tw-contain-paint: ;
+                            --tw-contain-style: ;
+                            --tw-text-opacity: 1;
+                            color: rgb(208, 198, 171);
+                          "
+                        >
+                          Diagnóstico avançado, formatação com backup, upgrade
+                          de SSD e memória RAM, limpeza preventiva e química,
+                          reparo avançado em placas-mãe e carcaças.
+                        </p>
+                      </div>
+                    </div>
+                    <p class=""></p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Orçamento Ágil &amp; Garantia</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <!-- Card 2: Venda de Computadores e Acessórios -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-secondary group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >desktop_windows</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-secondary"
+                      >LOJA &amp; EQUIPAMENTOS</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Venda de Computadores e Acessórios
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    ></p>
+                    <div
+                      class="flex flex-col gap-space-md"
+                      style="
+                        --tw-border-spacing-y: 0;
+                        --tw-translate-x: 0;
+                        --tw-translate-y: 0;
+                        --tw-rotate: 0;
+                        --tw-skew-x: 0;
+                        --tw-skew-y: 0;
+                        --tw-scale-x: 1;
+                        --tw-scale-y: 1;
+                        --tw-pan-x: ;
+                        --tw-pan-y: ;
+                        --tw-pinch-zoom: ;
+                        --tw-scroll-snap-strictness: proximity;
+                        --tw-gradient-from-position: ;
+                        --tw-gradient-via-position: ;
+                        --tw-gradient-to-position: ;
+                        --tw-ordinal: ;
+                        --tw-slashed-zero: ;
+                        --tw-numeric-figure: ;
+                        --tw-numeric-spacing: ;
+                        --tw-numeric-fraction: ;
+                        --tw-ring-inset: ;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-color: rgb(59 130 246 / 0.5);
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-colored: 0 0 #0000;
+                        --tw-blur: ;
+                        --tw-brightness: ;
+                        --tw-contrast: ;
+                        --tw-grayscale: ;
+                        --tw-hue-rotate: ;
+                        --tw-invert: ;
+                        --tw-saturate: ;
+                        --tw-sepia: ;
+                        --tw-drop-shadow: ;
+                        --tw-backdrop-blur: ;
+                        --tw-backdrop-brightness: ;
+                        --tw-backdrop-contrast: ;
+                        --tw-backdrop-grayscale: ;
+                        --tw-backdrop-hue-rotate: ;
+                        --tw-backdrop-invert: ;
+                        --tw-backdrop-opacity: ;
+                        --tw-backdrop-saturate: ;
+                        --tw-backdrop-sepia: ;
+                        --tw-contain-size: ;
+                        --tw-contain-layout: ;
+                        --tw-contain-paint: ;
+                        --tw-contain-style: ;
+                        color: rgb(229, 225, 228);
+                        font-size: 16px;
+                      "
+                    >
+                      <div
+                        class="flex flex-col gap-space-xs"
+                        style="
+                          --tw-border-spacing-y: 0;
+                          --tw-translate-x: 0;
+                          --tw-translate-y: 0;
+                          --tw-rotate: 0;
+                          --tw-skew-x: 0;
+                          --tw-skew-y: 0;
+                          --tw-scale-x: 1;
+                          --tw-scale-y: 1;
+                          --tw-pan-x: ;
+                          --tw-pan-y: ;
+                          --tw-pinch-zoom: ;
+                          --tw-scroll-snap-strictness: proximity;
+                          --tw-gradient-from-position: ;
+                          --tw-gradient-via-position: ;
+                          --tw-gradient-to-position: ;
+                          --tw-ordinal: ;
+                          --tw-slashed-zero: ;
+                          --tw-numeric-figure: ;
+                          --tw-numeric-spacing: ;
+                          --tw-numeric-fraction: ;
+                          --tw-ring-inset: ;
+                          --tw-ring-offset-width: 0px;
+                          --tw-ring-offset-color: #fff;
+                          --tw-ring-color: rgb(59 130 246 / 0.5);
+                          --tw-ring-offset-shadow: 0 0 #0000;
+                          --tw-ring-shadow: 0 0 #0000;
+                          --tw-shadow: 0 0 #0000;
+                          --tw-shadow-colored: 0 0 #0000;
+                          --tw-blur: ;
+                          --tw-brightness: ;
+                          --tw-contrast: ;
+                          --tw-grayscale: ;
+                          --tw-hue-rotate: ;
+                          --tw-invert: ;
+                          --tw-saturate: ;
+                          --tw-sepia: ;
+                          --tw-drop-shadow: ;
+                          --tw-backdrop-blur: ;
+                          --tw-backdrop-brightness: ;
+                          --tw-backdrop-contrast: ;
+                          --tw-backdrop-grayscale: ;
+                          --tw-backdrop-hue-rotate: ;
+                          --tw-backdrop-invert: ;
+                          --tw-backdrop-opacity: ;
+                          --tw-backdrop-saturate: ;
+                          --tw-backdrop-sepia: ;
+                          --tw-contain-size: ;
+                          --tw-contain-layout: ;
+                          --tw-contain-paint: ;
+                          --tw-contain-style: ;
+                        "
+                      >
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                          style="
+                            --tw-border-spacing-y: 0;
+                            --tw-translate-x: 0;
+                            --tw-translate-y: 0;
+                            --tw-rotate: 0;
+                            --tw-skew-x: 0;
+                            --tw-skew-y: 0;
+                            --tw-scale-x: 1;
+                            --tw-scale-y: 1;
+                            --tw-pan-x: ;
+                            --tw-pan-y: ;
+                            --tw-pinch-zoom: ;
+                            --tw-scroll-snap-strictness: proximity;
+                            --tw-gradient-from-position: ;
+                            --tw-gradient-via-position: ;
+                            --tw-gradient-to-position: ;
+                            --tw-ordinal: ;
+                            --tw-slashed-zero: ;
+                            --tw-numeric-figure: ;
+                            --tw-numeric-spacing: ;
+                            --tw-numeric-fraction: ;
+                            --tw-ring-inset: ;
+                            --tw-ring-offset-width: 0px;
+                            --tw-ring-offset-color: #fff;
+                            --tw-ring-color: rgb(59 130 246 / 0.5);
+                            --tw-ring-offset-shadow: 0 0 #0000;
+                            --tw-ring-shadow: 0 0 #0000;
+                            --tw-shadow: 0 0 #0000;
+                            --tw-shadow-colored: 0 0 #0000;
+                            --tw-blur: ;
+                            --tw-brightness: ;
+                            --tw-contrast: ;
+                            --tw-grayscale: ;
+                            --tw-hue-rotate: ;
+                            --tw-invert: ;
+                            --tw-saturate: ;
+                            --tw-sepia: ;
+                            --tw-drop-shadow: ;
+                            --tw-backdrop-blur: ;
+                            --tw-backdrop-brightness: ;
+                            --tw-backdrop-contrast: ;
+                            --tw-backdrop-grayscale: ;
+                            --tw-backdrop-hue-rotate: ;
+                            --tw-backdrop-invert: ;
+                            --tw-backdrop-opacity: ;
+                            --tw-backdrop-saturate: ;
+                            --tw-backdrop-sepia: ;
+                            --tw-contain-size: ;
+                            --tw-contain-layout: ;
+                            --tw-contain-paint: ;
+                            --tw-contain-style: ;
+                            --tw-text-opacity: 1;
+                            color: rgb(208, 198, 171);
+                          "
+                        >
+                          Desktops corporativos e gamers sob medida, notebooks,
+                          teclados, mouses, headsets, monitores e periféricos de
+                          marcas renomadas.
+                        </p>
+                      </div>
+                    </div>
+                    <p class=""></p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Pronta-Entrega em Rio das Ostras</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <!-- Card 3: Venda de Hardware e Peças -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-primary-container/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >memory</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-primary-container"
+                      >UPGRADE &amp; REPOSIÇÃO</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Venda de Hardware e Peças
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    ></p>
+                    <div
+                      class="flex flex-col gap-space-md"
+                      style="
+                        --tw-border-spacing-y: 0;
+                        --tw-translate-x: 0;
+                        --tw-translate-y: 0;
+                        --tw-rotate: 0;
+                        --tw-skew-x: 0;
+                        --tw-skew-y: 0;
+                        --tw-scale-x: 1;
+                        --tw-scale-y: 1;
+                        --tw-pan-x: ;
+                        --tw-pan-y: ;
+                        --tw-pinch-zoom: ;
+                        --tw-scroll-snap-strictness: proximity;
+                        --tw-gradient-from-position: ;
+                        --tw-gradient-via-position: ;
+                        --tw-gradient-to-position: ;
+                        --tw-ordinal: ;
+                        --tw-slashed-zero: ;
+                        --tw-numeric-figure: ;
+                        --tw-numeric-spacing: ;
+                        --tw-numeric-fraction: ;
+                        --tw-ring-inset: ;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-color: rgb(59 130 246 / 0.5);
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-colored: 0 0 #0000;
+                        --tw-blur: ;
+                        --tw-brightness: ;
+                        --tw-contrast: ;
+                        --tw-grayscale: ;
+                        --tw-hue-rotate: ;
+                        --tw-invert: ;
+                        --tw-saturate: ;
+                        --tw-sepia: ;
+                        --tw-drop-shadow: ;
+                        --tw-backdrop-blur: ;
+                        --tw-backdrop-brightness: ;
+                        --tw-backdrop-contrast: ;
+                        --tw-backdrop-grayscale: ;
+                        --tw-backdrop-hue-rotate: ;
+                        --tw-backdrop-invert: ;
+                        --tw-backdrop-opacity: ;
+                        --tw-backdrop-saturate: ;
+                        --tw-backdrop-sepia: ;
+                        --tw-contain-size: ;
+                        --tw-contain-layout: ;
+                        --tw-contain-paint: ;
+                        --tw-contain-style: ;
+                        color: rgb(229, 225, 228);
+                        font-size: 16px;
+                      "
+                    >
+                      <div
+                        class="flex flex-col gap-space-xs"
+                        style="
+                          --tw-border-spacing-y: 0;
+                          --tw-translate-x: 0;
+                          --tw-translate-y: 0;
+                          --tw-rotate: 0;
+                          --tw-skew-x: 0;
+                          --tw-skew-y: 0;
+                          --tw-scale-x: 1;
+                          --tw-scale-y: 1;
+                          --tw-pan-x: ;
+                          --tw-pan-y: ;
+                          --tw-pinch-zoom: ;
+                          --tw-scroll-snap-strictness: proximity;
+                          --tw-gradient-from-position: ;
+                          --tw-gradient-via-position: ;
+                          --tw-gradient-to-position: ;
+                          --tw-ordinal: ;
+                          --tw-slashed-zero: ;
+                          --tw-numeric-figure: ;
+                          --tw-numeric-spacing: ;
+                          --tw-numeric-fraction: ;
+                          --tw-ring-inset: ;
+                          --tw-ring-offset-width: 0px;
+                          --tw-ring-offset-color: #fff;
+                          --tw-ring-color: rgb(59 130 246 / 0.5);
+                          --tw-ring-offset-shadow: 0 0 #0000;
+                          --tw-ring-shadow: 0 0 #0000;
+                          --tw-shadow: 0 0 #0000;
+                          --tw-shadow-colored: 0 0 #0000;
+                          --tw-blur: ;
+                          --tw-brightness: ;
+                          --tw-contrast: ;
+                          --tw-grayscale: ;
+                          --tw-hue-rotate: ;
+                          --tw-invert: ;
+                          --tw-saturate: ;
+                          --tw-sepia: ;
+                          --tw-drop-shadow: ;
+                          --tw-backdrop-blur: ;
+                          --tw-backdrop-brightness: ;
+                          --tw-backdrop-contrast: ;
+                          --tw-backdrop-grayscale: ;
+                          --tw-backdrop-hue-rotate: ;
+                          --tw-backdrop-invert: ;
+                          --tw-backdrop-opacity: ;
+                          --tw-backdrop-saturate: ;
+                          --tw-backdrop-sepia: ;
+                          --tw-contain-size: ;
+                          --tw-contain-layout: ;
+                          --tw-contain-paint: ;
+                          --tw-contain-style: ;
+                        "
+                      >
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                          style="
+                            --tw-border-spacing-y: 0;
+                            --tw-translate-x: 0;
+                            --tw-translate-y: 0;
+                            --tw-rotate: 0;
+                            --tw-skew-x: 0;
+                            --tw-skew-y: 0;
+                            --tw-scale-x: 1;
+                            --tw-scale-y: 1;
+                            --tw-pan-x: ;
+                            --tw-pan-y: ;
+                            --tw-pinch-zoom: ;
+                            --tw-scroll-snap-strictness: proximity;
+                            --tw-gradient-from-position: ;
+                            --tw-gradient-via-position: ;
+                            --tw-gradient-to-position: ;
+                            --tw-ordinal: ;
+                            --tw-slashed-zero: ;
+                            --tw-numeric-figure: ;
+                            --tw-numeric-spacing: ;
+                            --tw-numeric-fraction: ;
+                            --tw-ring-inset: ;
+                            --tw-ring-offset-width: 0px;
+                            --tw-ring-offset-color: #fff;
+                            --tw-ring-color: rgb(59 130 246 / 0.5);
+                            --tw-ring-offset-shadow: 0 0 #0000;
+                            --tw-ring-shadow: 0 0 #0000;
+                            --tw-shadow: 0 0 #0000;
+                            --tw-shadow-colored: 0 0 #0000;
+                            --tw-blur: ;
+                            --tw-brightness: ;
+                            --tw-contrast: ;
+                            --tw-grayscale: ;
+                            --tw-hue-rotate: ;
+                            --tw-invert: ;
+                            --tw-saturate: ;
+                            --tw-sepia: ;
+                            --tw-drop-shadow: ;
+                            --tw-backdrop-blur: ;
+                            --tw-backdrop-brightness: ;
+                            --tw-backdrop-contrast: ;
+                            --tw-backdrop-grayscale: ;
+                            --tw-backdrop-hue-rotate: ;
+                            --tw-backdrop-invert: ;
+                            --tw-backdrop-opacity: ;
+                            --tw-backdrop-saturate: ;
+                            --tw-backdrop-sepia: ;
+                            --tw-contain-size: ;
+                            --tw-contain-layout: ;
+                            --tw-contain-paint: ;
+                            --tw-contain-style: ;
+                            --tw-text-opacity: 1;
+                            color: rgb(208, 198, 171);
+                          "
+                        >
+                          Processadores Intel e AMD, memórias RAM, placas de
+                          vídeo, fontes de alimentação certificadas, coolers e
+                          componentes de reposição das melhores marcas.
+                        </p>
+                      </div>
+                    </div>
+                    <p class=""></p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Peças 100% Originais</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <!-- Card 4: Venda de Material de Rede -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-secondary group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >router</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-secondary"
+                      >INFRAESTRUTURA &amp; CABEAMENTO</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Venda de Material de Rede
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    >
+                      Cabos de rede UTP/patch cords por metro ou bobina,
+                      conectores RJ45, roteadores Wi-Fi Mesh, switches, alicates
+                      de crimpagem, testadores e conectividade completa.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Para Residências e Empresas</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <!-- Card 5: Insumos para Impressão e Cartuchos -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-primary-container/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >print</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-primary-container"
+                      >IMPRESSORAS E SUPRIMENTOS</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Equipamentos e insumos
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    >
+                      Venda de cartuchos de tinta originais e compatíveis,
+                      toners a laser de alto rendimento, refis de tinta para
+                      tanque (Epson/HP/Canon) e impressoras com máxima
+                      durabilidade.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Compatíveis &amp; Originais</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <!-- Card 6: Reparo de Smartphones -->
+              <div
+                class="group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-card border border-border-subtle hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1.5 shadow-md hover:shadow-xl"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high border border-border-subtle flex items-center justify-center text-secondary group-hover:scale-105 transition-transform shadow-inner"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >smartphone</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <span
+                      class="font-label-uppercase text-label-uppercase text-secondary"
+                      >LABORATÓRIO MOBILE</span
+                    >
+                    <h3
+                      class="font-title-card text-title-card text-text-primary"
+                    >
+                      Reparo de Smartphones
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    >
+                      Troca de telas e displays, substituição de baterias
+                      viciadas, reparo em conectores de carga, recuperação após
+                      contato com água e manutenção preventiva com agilidade.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mt-space-md flex items-center justify-between bg-surface-container-low/40 px-space-sm py-2 rounded-lg border border-border-subtle/50 pt-2"
+                >
+                  <span
+                    class="font-code-mono text-code-mono text-text-muted ps-2"
+                    >Peças de Primeira Linha</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DIFERENCIAIS & SOBRE NÓS -->
+        <section
+          class="w-full bg-surface py-space-xl lg:py-28 relative"
+          id="diferenciais"
+        >
+          <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center"
+            >
+              <!-- Visual Storytelling Left Column -->
+              <div
+                class="lg:col-span-5 flex flex-col gap-space-md"
+                id="sobre-nos"
+              >
+                <div
+                  class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container border border-border-subtle"
+                >
+                  <img
+                    alt="Técnica experiente da SIGATEC trabalhando em bancada de microeletrônica em Rio das Ostras"
+                    class="w-full h-80 lg:h-96 object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1XtNHZBMBCincpXZ1Z7i1_uLfCquooyg_EYa75VDenddu80Xz-v8cDAZCqik8BU3DoxwYLq6JTOtwMU9U-aXxGUqRUUjyAvUttf1i4h8Xt_S5ETBhUo7i5mpp4tkLRIh35L2MFgPdFDjNThU9jrd0uhhOHlT7Vpw-vif21g__cfuHwhFYP2XnwVU9DJhqLKcC_aumCbREyqg6fQiNkgEjsvvys1ueBon5R5VPaX0_3L1zCc3Lw_Yv9nTHtL"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"
+                  ></div>
+                  <div
+                    class="absolute bottom-4 left-4 right-4 p-space-md rounded-xl bg-surface-card-glass backdrop-blur-md shadow-lg border border-border-subtle"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold"
+                      >
+                        <span class="material-symbols-outlined text-[24px]"
+                          >hardware</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-title-card text-title-card text-text-primary"
+                          >Bancada Técnica Especializada</span
+                        ><span class="font-body-sm text-body-sm text-text-muted"
+                          >Rio das Ostras e Região dos Lagos</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Content Right Column -->
+              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-uppercase text-label-uppercase text-primary-container"
+                    >POR QUE ESCOLHER A SIGATEC</span
+                  >
+                  <h2
+                    class="font-headline-lg text-headline-lg uppercase text-text-primary"
+                  >
+                    Excelência em Manutenção e Venda de Equipamentos de
+                    Informática
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Com mais de 29 anos de tradição em Rio das Ostras e Região
+                    dos Lagos, a SIGATEC INFORMÁTICA é a loja e assistência
+                    técnica de confiança para o conserto de notebooks,
+                    computadores e celulares, além de venda completa de peças,
+                    periféricos e material de rede.
+                  </p>
+                </div>
+                <!-- Differentials Bento Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div
+                    class="p-space-md rounded-xl bg-surface-container-low border border-border-subtle shadow-sm flex flex-col gap-space-xs"
+                  >
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >troubleshoot</span
+                      ><span
+                        class="font-title-card text-text-primary text-[16px]"
+                        >Diagnóstico Preciso &amp; Ágil</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant pt-2"
+                    >
+                      Análise detalhada de hardware em notebooks, PCs e
+                      smartphones com orçamento transparente.
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md rounded-xl bg-surface-container-low border border-border-subtle shadow-sm flex flex-col gap-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs text-secondary">
+                      <span class="material-symbols-outlined text-[24px]"
+                        >verified</span
+                      ><span
+                        class="font-title-card text-text-primary text-[16px]"
+                        >Peças Originais e Hardware de Qualidade</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Componentes certificados, peças de reposição de primeira
+                      linha e garantia formal em todos os reparos.
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md rounded-xl bg-surface-container-low border border-border-subtle shadow-sm flex flex-col gap-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs text-secondary">
+                      <span class="material-symbols-outlined text-[24px]"
+                        >precision_manufacturing</span
+                      ><span
+                        class="font-title-card text-text-primary text-[16px]"
+                        >Laboratório Próprio em Rio das Ostras</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Infraestrutura completa com ferramentas de precisão,
+                      microscópios e bancadas antiestáticas para
+                      microeletrônica.
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md rounded-xl bg-surface-container-low border border-border-subtle shadow-sm flex flex-col gap-space-xs"
+                  >
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >inventory_2</span
+                      ><span
+                        class="font-title-card text-text-primary text-[16px]"
+                        >Pronta-Entrega em Acessórios &amp; Redes</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Amplo estoque de cabos de rede, roteadores, insumos de
+                      impressão e periféricos para retirada imediata na loja
+                      física.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 1. SEÇÃO DE DEPOIMENTOS NO ESTILO GOOGLE REVIEWS -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-xl lg:py-24 border-y border-border-subtle"
+          id="depoimentos"
+          style="
+            background: linear-gradient(
+                135deg,
+                rgba(245, 205, 17, 0.09) 0%,
+                rgba(18, 18, 20, 0.96) 25%,
+                rgba(0, 181, 236, 0.12) 50%,
+                rgba(14, 14, 16, 0.98) 75%,
+                rgba(245, 205, 17, 0.07) 100%
+              )
+              0% 0% / 300% 300%;
+            animation: 14s ease 0s infinite normal none running
+              gradientShiftReviews;
+            position: relative;
+          "
+        >
+          <style class="">
+            @keyframes gradientShiftReviews {
+              0% {
+                background-position: 0% 50%;
+              }
+              50% {
+                background-position: 100% 50%;
+              }
+              100% {
+                background-position: 0% 50%;
+              }
+            }
+          </style>
+          <div
+            class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Title & Official Google Reviews Badge -->
+            <div
+              class="flex flex-col items-center text-center max-w-3xl mx-auto gap-space-sm"
+            >
+              <!-- Badge Oficial Google Reviews -->
+              <div
+                class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-surface-container border border-border-subtle shadow-sm hover:border-secondary/40 transition-colors"
+              >
+                <!-- Google "G" Icon SVG -->
+                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                  <path
+                    d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                    fill="#4285F4"
+                  ></path>
+                  <path
+                    d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                    fill="#34A853"
+                  ></path>
+                  <path
+                    d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                    fill="#FBBC05"
+                  ></path>
+                  <path
+                    d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                    fill="#EA4335"
+                  ></path>
+                </svg>
+                <span
+                  class="font-label-uppercase text-xs tracking-wider text-text-primary font-bold"
+                  >AVALIAÇÕES NO GOOGLE • 4.4</span
+                >
+                <span
+                  class="text-primary-container text-xs tracking-tight font-bold"
+                  >★★★★★</span
+                >
+                <span class="text-text-muted text-xs hidden sm:inline"
+                  >(+97 avaliações verificadas em Rio das Ostras)</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-headline-lg uppercase text-text-primary tracking-tight"
+              >
+                O QUE NOSSOS CLIENTES DIZEM NO GOOGLE
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-2xl"
+              >
+                A confiança de mais de 29 anos refletida nas avaliações reais de
+                quem utiliza nossos serviços e adquire nossos equipamentos
+                diariamente.
+              </p>
+            </div>
+            <!-- 4 Google Review Cards Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
+            >
+              <!-- Review 1: Roberto Albuquerque -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-card border border-border-subtle flex flex-col justify-between shadow-lg hover:border-primary-container/40 transition-all"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-1 text-[11px] text-text-muted font-code-mono"
+                    >
+                      <!-- Mini Google G -->
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                      <span class="">há 4 meses</span>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                  ></p>
+                  <div
+                    class="flex flex-col gap-space-sm"
+                    style="
+                      --tw-border-spacing-y: 0;
+                      --tw-translate-x: 0;
+                      --tw-translate-y: 0;
+                      --tw-rotate: 0;
+                      --tw-skew-x: 0;
+                      --tw-skew-y: 0;
+                      --tw-scale-x: 1;
+                      --tw-scale-y: 1;
+                      --tw-pan-x: ;
+                      --tw-pan-y: ;
+                      --tw-pinch-zoom: ;
+                      --tw-scroll-snap-strictness: proximity;
+                      --tw-gradient-from-position: ;
+                      --tw-gradient-via-position: ;
+                      --tw-gradient-to-position: ;
+                      --tw-ordinal: ;
+                      --tw-slashed-zero: ;
+                      --tw-numeric-figure: ;
+                      --tw-numeric-spacing: ;
+                      --tw-numeric-fraction: ;
+                      --tw-ring-inset: ;
+                      --tw-ring-offset-width: 0px;
+                      --tw-ring-offset-color: #fff;
+                      --tw-ring-color: rgb(59 130 246 / 0.5);
+                      --tw-ring-offset-shadow: 0 0 #0000;
+                      --tw-ring-shadow: 0 0 #0000;
+                      --tw-shadow: 0 0 #0000;
+                      --tw-shadow-colored: 0 0 #0000;
+                      --tw-blur: ;
+                      --tw-brightness: ;
+                      --tw-contrast: ;
+                      --tw-grayscale: ;
+                      --tw-hue-rotate: ;
+                      --tw-invert: ;
+                      --tw-saturate: ;
+                      --tw-sepia: ;
+                      --tw-drop-shadow: ;
+                      --tw-backdrop-blur: ;
+                      --tw-backdrop-brightness: ;
+                      --tw-backdrop-contrast: ;
+                      --tw-backdrop-grayscale: ;
+                      --tw-backdrop-hue-rotate: ;
+                      --tw-backdrop-invert: ;
+                      --tw-backdrop-opacity: ;
+                      --tw-backdrop-saturate: ;
+                      --tw-backdrop-sepia: ;
+                      --tw-contain-size: ;
+                      --tw-contain-layout: ;
+                      --tw-contain-paint: ;
+                      --tw-contain-style: ;
+                      font-size: 16px;
+                    "
+                  >
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                      style="
+                        --tw-border-spacing-y: 0;
+                        --tw-translate-x: 0;
+                        --tw-translate-y: 0;
+                        --tw-rotate: 0;
+                        --tw-skew-x: 0;
+                        --tw-skew-y: 0;
+                        --tw-scale-x: 1;
+                        --tw-scale-y: 1;
+                        --tw-pan-x: ;
+                        --tw-pan-y: ;
+                        --tw-pinch-zoom: ;
+                        --tw-scroll-snap-strictness: proximity;
+                        --tw-gradient-from-position: ;
+                        --tw-gradient-via-position: ;
+                        --tw-gradient-to-position: ;
+                        --tw-ordinal: ;
+                        --tw-slashed-zero: ;
+                        --tw-numeric-figure: ;
+                        --tw-numeric-spacing: ;
+                        --tw-numeric-fraction: ;
+                        --tw-ring-inset: ;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-color: rgb(59 130 246 / 0.5);
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-colored: 0 0 #0000;
+                        --tw-blur: ;
+                        --tw-brightness: ;
+                        --tw-contrast: ;
+                        --tw-grayscale: ;
+                        --tw-hue-rotate: ;
+                        --tw-invert: ;
+                        --tw-saturate: ;
+                        --tw-sepia: ;
+                        --tw-drop-shadow: ;
+                        --tw-backdrop-blur: ;
+                        --tw-backdrop-brightness: ;
+                        --tw-backdrop-contrast: ;
+                        --tw-backdrop-grayscale: ;
+                        --tw-backdrop-hue-rotate: ;
+                        --tw-backdrop-invert: ;
+                        --tw-backdrop-opacity: ;
+                        --tw-backdrop-saturate: ;
+                        --tw-backdrop-sepia: ;
+                        --tw-contain-size: ;
+                        --tw-contain-layout: ;
+                        --tw-contain-paint: ;
+                        --tw-contain-style: ;
+                        --tw-text-opacity: 1;
+                        color: rgb(229, 225, 228);
+                      "
+                    >
+                      "É a única loja que confio em levar meu computador.
+                      Profissionais de excelência, educação e honestos! Não há
+                      dúvidas nisso! Resolveram meu problema que nenhuma outra
+                      assistência resolveu!."
+                    </p>
+                  </div>
+                  <p class=""></p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-border-subtle/60"
+                >
+                  <div
+                    class="relative w-10 h-10 rounded-full bg-gradient-to-br from-primary-container to-amber-600 flex items-center justify-center font-bold text-on-primary-container text-sm"
+                  >
+                    MC
+                    <span
+                      class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-card border border-surface-container flex items-center justify-center text-[10px] text-[#4285F4]"
+                    >
+                      <svg class="w-2.5 h-2.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-button-text text-sm text-text-primary font-bold"
+                      ><span
+                        class="font-button-text text-sm text-text-primary font-bold"
+                        style="
+                          --tw-border-spacing-y: 0;
+                          --tw-translate-x: 0;
+                          --tw-translate-y: 0;
+                          --tw-rotate: 0;
+                          --tw-skew-x: 0;
+                          --tw-skew-y: 0;
+                          --tw-scale-x: 1;
+                          --tw-scale-y: 1;
+                          --tw-pan-x: ;
+                          --tw-pan-y: ;
+                          --tw-pinch-zoom: ;
+                          --tw-scroll-snap-strictness: proximity;
+                          --tw-gradient-from-position: ;
+                          --tw-gradient-via-position: ;
+                          --tw-gradient-to-position: ;
+                          --tw-ordinal: ;
+                          --tw-slashed-zero: ;
+                          --tw-numeric-figure: ;
+                          --tw-numeric-spacing: ;
+                          --tw-numeric-fraction: ;
+                          --tw-ring-inset: ;
+                          --tw-ring-offset-width: 0px;
+                          --tw-ring-offset-color: #fff;
+                          --tw-ring-color: rgb(59 130 246 / 0.5);
+                          --tw-ring-offset-shadow: 0 0 #0000;
+                          --tw-ring-shadow: 0 0 #0000;
+                          --tw-shadow: 0 0 #0000;
+                          --tw-shadow-colored: 0 0 #0000;
+                          --tw-blur: ;
+                          --tw-brightness: ;
+                          --tw-contrast: ;
+                          --tw-grayscale: ;
+                          --tw-hue-rotate: ;
+                          --tw-invert: ;
+                          --tw-saturate: ;
+                          --tw-sepia: ;
+                          --tw-drop-shadow: ;
+                          --tw-backdrop-blur: ;
+                          --tw-backdrop-brightness: ;
+                          --tw-backdrop-contrast: ;
+                          --tw-backdrop-grayscale: ;
+                          --tw-backdrop-hue-rotate: ;
+                          --tw-backdrop-invert: ;
+                          --tw-backdrop-opacity: ;
+                          --tw-backdrop-saturate: ;
+                          --tw-backdrop-sepia: ;
+                          --tw-contain-size: ;
+                          --tw-contain-layout: ;
+                          --tw-contain-paint: ;
+                          --tw-contain-style: ;
+                          --tw-text-opacity: 1;
+                          color: rgb(255, 255, 255);
+                        "
+                        >Mateus Correia<br /></span
+                      ><span
+                        class="text-[11px] text-secondary flex items-center gap-0.5"
+                        style="
+                          --tw-border-spacing-y: 0;
+                          --tw-translate-x: 0;
+                          --tw-translate-y: 0;
+                          --tw-rotate: 0;
+                          --tw-skew-x: 0;
+                          --tw-skew-y: 0;
+                          --tw-scale-x: 1;
+                          --tw-scale-y: 1;
+                          --tw-pan-x: ;
+                          --tw-pan-y: ;
+                          --tw-pinch-zoom: ;
+                          --tw-scroll-snap-strictness: proximity;
+                          --tw-gradient-from-position: ;
+                          --tw-gradient-via-position: ;
+                          --tw-gradient-to-position: ;
+                          --tw-ordinal: ;
+                          --tw-slashed-zero: ;
+                          --tw-numeric-figure: ;
+                          --tw-numeric-spacing: ;
+                          --tw-numeric-fraction: ;
+                          --tw-ring-inset: ;
+                          --tw-ring-offset-width: 0px;
+                          --tw-ring-offset-color: #fff;
+                          --tw-ring-color: rgb(59 130 246 / 0.5);
+                          --tw-ring-offset-shadow: 0 0 #0000;
+                          --tw-ring-shadow: 0 0 #0000;
+                          --tw-shadow: 0 0 #0000;
+                          --tw-shadow-colored: 0 0 #0000;
+                          --tw-blur: ;
+                          --tw-brightness: ;
+                          --tw-contrast: ;
+                          --tw-grayscale: ;
+                          --tw-hue-rotate: ;
+                          --tw-invert: ;
+                          --tw-saturate: ;
+                          --tw-sepia: ;
+                          --tw-drop-shadow: ;
+                          --tw-backdrop-blur: ;
+                          --tw-backdrop-brightness: ;
+                          --tw-backdrop-contrast: ;
+                          --tw-backdrop-grayscale: ;
+                          --tw-backdrop-hue-rotate: ;
+                          --tw-backdrop-invert: ;
+                          --tw-backdrop-opacity: ;
+                          --tw-backdrop-saturate: ;
+                          --tw-backdrop-sepia: ;
+                          --tw-contain-size: ;
+                          --tw-contain-layout: ;
+                          --tw-contain-paint: ;
+                          --tw-contain-style: ;
+                          --tw-text-opacity: 1;
+                          color: rgb(113, 210, 255);
+                          font-family: Inter;
+                          font-weight: 400;
+                        "
+                      ></span
+                    ></span>
+                    <span
+                      class="text-[11px] text-secondary flex items-center gap-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[13px]"
+                        >check_circle</span
+                      >
+                      Avaliação Verificada
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 2: Dra. Juliana Vianna -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-card border border-border-subtle flex flex-col justify-between shadow-lg hover:border-secondary/40 transition-all"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-1 text-[11px] text-text-muted font-code-mono"
+                    >
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                      <span class="">há 9 meses</span>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                  ></p>
+                  <div
+                    class="flex flex-col gap-space-sm"
+                    style="
+                      --tw-border-spacing-y: 0;
+                      --tw-translate-x: 0;
+                      --tw-translate-y: 0;
+                      --tw-rotate: 0;
+                      --tw-skew-x: 0;
+                      --tw-skew-y: 0;
+                      --tw-scale-x: 1;
+                      --tw-scale-y: 1;
+                      --tw-pan-x: ;
+                      --tw-pan-y: ;
+                      --tw-pinch-zoom: ;
+                      --tw-scroll-snap-strictness: proximity;
+                      --tw-gradient-from-position: ;
+                      --tw-gradient-via-position: ;
+                      --tw-gradient-to-position: ;
+                      --tw-ordinal: ;
+                      --tw-slashed-zero: ;
+                      --tw-numeric-figure: ;
+                      --tw-numeric-spacing: ;
+                      --tw-numeric-fraction: ;
+                      --tw-ring-inset: ;
+                      --tw-ring-offset-width: 0px;
+                      --tw-ring-offset-color: #fff;
+                      --tw-ring-color: rgb(59 130 246 / 0.5);
+                      --tw-ring-offset-shadow: 0 0 #0000;
+                      --tw-ring-shadow: 0 0 #0000;
+                      --tw-shadow: 0 0 #0000;
+                      --tw-shadow-colored: 0 0 #0000;
+                      --tw-blur: ;
+                      --tw-brightness: ;
+                      --tw-contrast: ;
+                      --tw-grayscale: ;
+                      --tw-hue-rotate: ;
+                      --tw-invert: ;
+                      --tw-saturate: ;
+                      --tw-sepia: ;
+                      --tw-drop-shadow: ;
+                      --tw-backdrop-blur: ;
+                      --tw-backdrop-brightness: ;
+                      --tw-backdrop-contrast: ;
+                      --tw-backdrop-grayscale: ;
+                      --tw-backdrop-hue-rotate: ;
+                      --tw-backdrop-invert: ;
+                      --tw-backdrop-opacity: ;
+                      --tw-backdrop-saturate: ;
+                      --tw-backdrop-sepia: ;
+                      --tw-contain-size: ;
+                      --tw-contain-layout: ;
+                      --tw-contain-paint: ;
+                      --tw-contain-style: ;
+                      font-size: 16px;
+                    "
+                  >
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                      style="
+                        --tw-border-spacing-y: 0;
+                        --tw-translate-x: 0;
+                        --tw-translate-y: 0;
+                        --tw-rotate: 0;
+                        --tw-skew-x: 0;
+                        --tw-skew-y: 0;
+                        --tw-scale-x: 1;
+                        --tw-scale-y: 1;
+                        --tw-pan-x: ;
+                        --tw-pan-y: ;
+                        --tw-pinch-zoom: ;
+                        --tw-scroll-snap-strictness: proximity;
+                        --tw-gradient-from-position: ;
+                        --tw-gradient-via-position: ;
+                        --tw-gradient-to-position: ;
+                        --tw-ordinal: ;
+                        --tw-slashed-zero: ;
+                        --tw-numeric-figure: ;
+                        --tw-numeric-spacing: ;
+                        --tw-numeric-fraction: ;
+                        --tw-ring-inset: ;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-color: rgb(59 130 246 / 0.5);
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-colored: 0 0 #0000;
+                        --tw-blur: ;
+                        --tw-brightness: ;
+                        --tw-contrast: ;
+                        --tw-grayscale: ;
+                        --tw-hue-rotate: ;
+                        --tw-invert: ;
+                        --tw-saturate: ;
+                        --tw-sepia: ;
+                        --tw-drop-shadow: ;
+                        --tw-backdrop-blur: ;
+                        --tw-backdrop-brightness: ;
+                        --tw-backdrop-contrast: ;
+                        --tw-backdrop-grayscale: ;
+                        --tw-backdrop-hue-rotate: ;
+                        --tw-backdrop-invert: ;
+                        --tw-backdrop-opacity: ;
+                        --tw-backdrop-saturate: ;
+                        --tw-backdrop-sepia: ;
+                        --tw-contain-size: ;
+                        --tw-contain-layout: ;
+                        --tw-contain-paint: ;
+                        --tw-contain-style: ;
+                        --tw-text-opacity: 1;
+                        color: rgb(229, 225, 228);
+                      "
+                    >
+                      "Ótimo serviço técnico, com qualidade e agilidade. Levei
+                      meu notebook recentemente e a equipe foi cirúrgica em
+                      identificar e resolver o problema, além de um preço
+                      justo."
+                    </p>
+                  </div>
+                  <p class=""></p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-border-subtle/60"
+                >
+                  <div
+                    class="relative w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center font-bold text-on-secondary text-sm"
+                  >
+                    AG
+                    <span
+                      class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-card border border-surface-container flex items-center justify-center text-[10px] text-[#4285F4]"
+                    >
+                      <svg class="w-2.5 h-2.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-button-text text-sm text-text-primary font-bold"
+                      ><div>
+                        <span
+                          class=""
+                          style="font-size: 0.875rem; letter-spacing: 0em"
+                          >Alexandre Guimarães</span
+                        >
+                      </div></span
+                    >
+                    <span
+                      class="text-[11px] text-secondary flex items-center gap-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[13px]"
+                        >check_circle</span
+                      >
+                      Avaliação Verificada
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 3: Lucas Mendonça -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-card border border-border-subtle flex flex-col justify-between shadow-lg hover:border-primary-container/40 transition-all"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      ><span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      ><span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      ><span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      ><span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-1 text-[11px] text-text-muted font-code-mono"
+                    >
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path></svg
+                      ><span class="">há 4 meses</span>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                  >
+                    “Fizeram orçamento em 5 dias e foram muito honestos. Eu
+                    indico.”
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-border-subtle/60"
+                >
+                  <div
+                    class="relative w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center font-bold text-white text-sm"
+                  >
+                    AN
+                    <span
+                      class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-card border border-surface-container flex items-center justify-center text-[10px] text-[#4285F4]"
+                    >
+                      <svg class="w-2.5 h-2.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-button-text text-sm text-text-primary font-bold"
+                      >Abigail Nascimento</span
+                    >
+                    <span
+                      class="text-[11px] text-secondary flex items-center gap-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[13px]"
+                        >check_circle</span
+                      >
+                      Avaliação Verificada
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 4: Marcos Vinicius Teixeira -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-card border border-border-subtle flex flex-col justify-between shadow-lg hover:border-secondary/40 transition-all"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-space-xs text-primary-container"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >star</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-1 text-[11px] text-text-muted font-code-mono"
+                    >
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                      <span class="">há 8 meses</span>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface leading-relaxed pt-1"
+                  >
+                    "Gosto muito do atendimento e confio no seu trabalho. Super
+                    recomendo!!!"
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-border-subtle/60"
+                >
+                  <div
+                    class="relative w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-700 flex items-center justify-center font-bold text-white text-sm"
+                  >
+                    MK
+                    <span
+                      class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-card border border-surface-container flex items-center justify-center text-[10px] text-[#4285F4]"
+                    >
+                      <svg class="w-2.5 h-2.5" viewBox="0 0 24 24">
+                        <path
+                          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                          fill="#4285F4"
+                        ></path>
+                        <path
+                          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                          fill="#EA4335"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-button-text text-sm text-text-primary font-bold"
+                      >Em foco com MK</span
+                    >
+                    <span
+                      class="text-[11px] text-secondary flex items-center gap-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[13px]"
+                        >check_circle</span
+                      >
+                      Avaliação Verificada
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 2. REFORMULAÇÃO COMPLETA DO FORMULÁRIO DE CONTATO (ORÇAMENTO & CONSULTORIA) -->
+        <section class="w-full bg-surface py-space-xl lg:py-24" id="contato">
+          <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+            <div
+              class="relative rounded-3xl bg-surface-container p-space-lg lg:p-space-xl shadow-2xl overflow-hidden border border-border-subtle"
+            >
+              <!-- Ambient decorative shapes -->
+              <div
+                class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-brand-gradient-start/15 blur-[100px] pointer-events-none"
+              ></div>
+              <div
+                class="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-brand-gradient-end/15 blur-[100px] pointer-events-none"
+              ></div>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start relative z-10"
+              >
+                <!-- Text Callout & Authority Column -->
+                <div class="lg:col-span-5 flex flex-col gap-space-md">
+                  <div
+                    class="inline-flex items-center gap-space-xs text-primary-container font-label-uppercase text-label-uppercase"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >verified</span
+                    >ATENDIMENTO TÉCNICO
+                  </div>
+                  <h2
+                    class="font-headline-lg text-headline-lg uppercase text-text-primary leading-tight"
+                  >
+                    SOLICITE SEU DIAGNÓSTICO OU ORÇAMENTO PERSONALIZADO
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Fale com técnicos capacitados em nosso laboratório próprio
+                    em Rio das Ostras. Transparência total, diagnostico técnico
+                    preciso e garantia formal em cada serviço ou equipamento.
+                  </p>
+                  <!-- Badges de autoridade e confiança -->
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div
+                      class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-high/60 border border-border-subtle/80 text-on-surface font-body-sm text-body-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[20px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span class=""
+                        >Diagnóstico Especializado em Laboratório Próprio</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-high/60 border border-border-subtle/80 text-on-surface font-body-sm text-body-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span class=""
+                        >Peças e Hardware 100% Originais com Garantia</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-high/60 border border-border-subtle/80 text-on-surface font-body-sm text-body-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[20px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span class=""
+                        >Montagem Sob Medida de PCs de escritório e PCs
+                        Gamers</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-high/60 border border-border-subtle/80 text-on-surface font-body-sm text-body-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span class="">Resposta rápida de até 48 horas</span>
+                    </div>
+                  </div>
+                  <div
+                    class="p-space-sm rounded-xl bg-surface-card-glass border border-border-subtle flex items-center gap-space-sm mt-space-xs"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >security</span
+                      >
+                    </div>
+                    <div class="flex flex-col text-xs text-text-muted">
+                      <span class="font-bold text-text-primary"
+                        >Há mais de 29 anos no mercado</span
+                      >
+                      <span class="">Atendimento e garantia</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Microform Card -->
+                <div class="lg:col-span-7">
+                  <div
+                    class="rounded-2xl bg-surface-card-glass backdrop-blur-xl p-space-lg lg:p-space-xl shadow-xl border border-border-subtle"
+                  >
+                    <form
+                      class="flex flex-col gap-space-md"
+                      id="form-orcamento"
+                      onsubmit="
+                        event.preventDefault();
+                        document
+                          .getElementById('form-feedback')
+                          .classList.remove('hidden');
+                      "
+                    >
+                      <!-- Nome Completo -->
+                      <div class="flex flex-col gap-1.5">
+                        <label
+                          class="font-label-uppercase text-label-uppercase text-on-surface"
+                          for="nome"
+                          >Nome Completo *</label
+                        >
+                        <input
+                          class="w-full px-space-md py-3 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:bg-surface-bright shadow-inner font-body-md text-body-md transition-colors"
+                          id="nome"
+                          placeholder="Ex: Carlos Eduardo Silva"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <!-- WhatsApp e Email Grid -->
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                        <div class="flex flex-col gap-1.5">
+                          <label
+                            class="font-label-uppercase text-label-uppercase text-on-surface"
+                            for="telefone"
+                            >WhatsApp / Telefone com DDD *</label
+                          >
+                          <input
+                            class="w-full px-space-md py-3 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:bg-surface-bright shadow-inner font-body-md text-body-md transition-colors"
+                            id="telefone"
+                            placeholder="(22) 99999-9999"
+                            required=""
+                            type="tel"
+                          />
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                          <label
+                            class="font-label-uppercase text-label-uppercase text-on-surface"
+                            for="email"
+                            >E-mail Corporativo ou Pessoal *</label
+                          >
+                          <input
+                            class="w-full px-space-md py-3 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:bg-surface-bright shadow-inner font-body-md text-body-md transition-colors"
+                            id="email"
+                            placeholder="seuemail@exemplo.com"
+                            required=""
+                            type="email"
+                          />
+                        </div>
+                      </div>
+                      <!-- Tipo de Necessidade / Serviço com opções abrangentes -->
+                      <div class="flex flex-col gap-1.5">
+                        <label
+                          class="font-label-uppercase text-label-uppercase text-on-surface"
+                          for="servico"
+                          >Tipo de Necessidade / Serviço *</label
+                        >
+                        <select
+                          class="w-full px-space-md py-3 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary focus:outline-none focus:border-primary-container focus:bg-surface-bright shadow-inner font-body-md text-body-md transition-colors"
+                          id="servico"
+                          required=""
+                        >
+                          <option value="reparo-pc-notebook">
+                            Reparo e Manutenção Especializada de Notebooks e PCs
+                          </option>
+                          <option value="pc-gamer">
+                            Montagem de PC Gamer de Alta Performance
+                            (Customizado)
+                          </option>
+                          <option value="servidores">
+                            Venda, Configuração e Implantação de Servidores
+                          </option>
+                          <option value="microeletronica">
+                            Reparo Avançado de Placas e Microeletrônica
+                          </option>
+                          <option value="redes">
+                            Infraestrutura de Redes e Cabeamento Estruturado
+                          </option>
+                          <option value="venda-computadores">
+                            Venda de Computadores Corporativos e Acessórios
+                          </option>
+                          <option value="hardware-pecas">
+                            Venda de Hardware e Peças de Reposição
+                          </option>
+                          <option value="smartphones">
+                            Reparo de Smartphones e Dispositivos Móveis
+                          </option>
+                        </select>
+                      </div>
+                      <!-- Detalhes do Equipamento ou Especificações Desejadas -->
+                      <div class="flex flex-col gap-1.5">
+                        <label
+                          class="font-label-uppercase text-label-uppercase text-on-surface"
+                          for="detalhes"
+                          >Detalhes do Equipamento ou Especificações
+                          Desejadas</label
+                        >
+                        <textarea
+                          class="w-full px-space-md py-3 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:bg-surface-bright shadow-inner font-body-md text-body-md transition-colors resize-none"
+                          id="detalhes"
+                          placeholder="Descreva os sintomas do aparelho, orçamento pretendido para o PC Gamer ou a demanda da sua empresa..."
+                          rows="7"
+                        ></textarea>
+                      </div>
+                      <!-- Botão CTA em Amarelo Sigatec -->
+                      <button
+                        class="mt-space-md w-full py-4 rounded-xl bg-primary-container font-button-text text-button-text font-bold uppercase tracking-wider shadow-lg hover:brightness-110 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-space-xs text-[#121214]"
+                        style="color: rgb(18, 18, 20)"
+                        type="submit"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[20px] text-[#121214] ps-3"
+                          style="color: rgb(18, 18, 20)"
+                          >send</span
+                        >ENVIAR SOLICITAÇÃO PARA ANÁLISE TÉCNICA
+                      </button>
+                      <!-- Feedback Toast -->
+                      <div
+                        class="hidden p-space-sm rounded-xl bg-surface-container-high border border-secondary text-secondary flex items-center gap-space-xs mt-space-xs"
+                        id="form-feedback"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >check_circle</span
+                        >
+                        <span class="font-body-sm text-body-sm"
+                          >Solicitação registrada com sucesso! Nossos técnicos
+                          seniores entrarão em contato em até 2 horas
+                          úteis.</span
+                        >
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 3. NOVA SEÇÃO DE LOCALIZAÇÃO DA LOJA (GOOGLE MAPS EM RIO DAS OSTRAS) -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-xl lg:py-24 border-t border-border-subtle"
+          id="localizacao"
+        >
+          <div
+            class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Header -->
+            <div
+              class="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-xs"
+            >
+              <div
+                class="inline-flex items-center gap-space-xs text-secondary font-label-uppercase text-label-uppercase"
+              >
+                <span class="material-symbols-outlined text-[18px]">store</span>
+                PONTO DE ATENDIMENTO PRESENCIAL
+              </div>
+              <h2
+                class="font-headline-lg text-headline-lg uppercase text-text-primary"
+              >
+                VISITE NOSSA LOJA E LABORATÓRIO EM RIO DAS OSTRAS
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Estrutura física completa, bancada de testes de microeletrônica,
+                pronta-entrega de componentes e atendimento técnico direto.
+              </p>
+            </div>
+            <!-- Layout dividido em duas colunas -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch"
+            >
+              <!-- Coluna da Esquerda (Informações e Facilidades) -->
+              <div
+                class="lg:col-span-5 flex flex-col justify-between p-space-lg lg:p-space-xl rounded-2xl bg-surface-card border border-border-subtle shadow-xl gap-space-lg"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <!-- Endereço em Destaque -->
+                  <div
+                    class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-border-subtle"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >location_on</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-uppercase text-xs text-primary-container font-bold"
+                        >ENDEREÇO EM RIO DAS OSTRAS</span
+                      >
+                      <span
+                        class="font-title-card text-base text-text-primary font-bold"
+                        >Rodovia Amaral Peixoto / Centro</span
+                      >
+                      <span class="text-body-sm text-text-muted"
+                        >Rio das Ostras - RJ, CEP: 28893-102</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Horários de Atendimento -->
+                  <div
+                    class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-border-subtle"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >schedule</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-uppercase text-xs text-secondary font-bold"
+                        >HORÁRIO DE FUNCIONAMENTO</span
+                      >
+                      <span class="text-body-sm text-text-primary font-semibold"
+                        >Segunda a Sexta: 09:00 às 18:00</span
+                      >
+                      <span class="text-body-sm text-text-muted"
+                        >Sábados: 09:00 às 13:00</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Telefones e WhatsApp -->
+                  <div
+                    class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-border-subtle"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >call</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-uppercase text-xs text-primary-container font-bold"
+                        >CONTATO DIRETO</span
+                      >
+                      <span class="text-body-sm text-text-primary font-semibold"
+                        >Telefone e Whatsapp: (22) 99803-6064</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Ícones/tags de diferenciais da loja física -->
+                  <div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+                    <div
+                      class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-high/60 border border-border-subtle text-xs text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >local_parking</span
+                      >
+                      <span class="">Estacionamento Próximo</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-high/60 border border-border-subtle text-xs text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >ac_unit</span
+                      >
+                      <span class="">Ambiente Climatizado</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-high/60 border border-border-subtle text-xs text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[16px]"
+                        >precision_manufacturing</span
+                      >
+                      <span class="">Bancadas equipadas</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-high/60 border border-border-subtle text-xs text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[16px]"
+                        >inventory</span
+                      >
+                      <span class="">Retirada Imediata</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Botão com link para traçar rota -->
+                <a
+                  class="w-full py-3.5 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-border-subtle text-primary-container font-button-text text-button-text font-bold uppercase tracking-wider flex items-center justify-center gap-space-xs transition-all shadow-sm hover:border-primary-container/60"
+                  href="https://maps.google.com/?q=Rio+das+Ostras+RJ"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >directions</span
+                  >
+                  Traçar Rota no Google Maps
+                </a>
+              </div>
+              <!-- Coluna da Direita (Google Maps Iframe Responsivo) -->
+              <div class="lg:col-span-7 flex flex-col">
+                <div
+                  class="w-full h-full min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden border border-border-subtle shadow-xl bg-surface-card relative"
+                >
+                  <iframe
+                    allowfullscreen=""
+                    class="w-full h-full min-h-[380px] lg:min-h-[460px] border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58782.91572990928!2d-41.97931885448372!3d-22.527637840131464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97ad6d9465aa99%3A0x6b4f73858eb5b3!2sRio%20das%20Ostras%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                    title="Localização da SIGATEC INFORMÁTICA em Rio das Ostras"
+                  >
+                  </iframe>
+                  <!-- Overlay Badge informativo de localização -->
+                  <div
+                    class="absolute top-4 left-4 p-space-sm rounded-xl bg-surface-dim/90 backdrop-blur-md border border-border-subtle hidden sm:flex items-center gap-space-xs shadow-lg"
+                  >
+                    <img
+                      alt="SIGATEC Informática"
+                      class="h-6 w-auto object-contain"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuTZJ68yP0ic1tm_s4nOHO-Un3sBCBsvSyoO30mtnISpVpGGZ5pzhf0lwGQbw5MMMexhL54E5q4bRARmnVMhrmGyVhgghGKmItdvPjLF__lXh_4fMYdhlqdRTNGcUDrc7DP2Q1R0lPiaLWGxInvIsrcMYD3wXkgmoblEXe_73HpZopsndROGQhGsZ3jtu8PhMfPcER3Mb1jBxsy_B4oAuRqKr7pByFR_iUAbAWnZMCjSB8KgVdX17-5S6bxc7qaX_CixI"
+                    />
+                    <div class="flex flex-col">
+                      <span
+                        class="font-button-text text-xs text-text-primary font-bold"
+                        >SIGATEC INFORMÁTICA</span
+                      >
+                      <span class="text-[10px] text-secondary"
+                        >Rio das Ostras - Região dos Lagos / RJ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest text-on-surface-variant pt-space-xl pb-space-lg border-t border-border-subtle"
+    >
+      <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"
+        >
+          <div class="flex flex-col gap-space-md">
+            <div class="flex items-center gap-space-md">
+              <img
+                alt="SIGATEC Informática Logo"
+                class="h-9 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBkkNv7QJk4gKup-0FmpLTyPuploSXzAxpGMDoGBi2uPfSTjImketLQPWnMmeO3BM0fBWRKowbRoPlk5ILLogkrCkFjllrI0P6Qz9btove5dBEQfn1hQzdFYyrXsPJcgTDYjTouuqp2qrYe-6x6L7fAcRBW4A85aPqVd4bwLx4l3HEOIFfwN-kpHFWxVWTQJX7yRwTKBhsRadzf3bNIAls8gfM6fnfgVJS5_EE9bZL10s5ZnZFEpZ3Nu6AfKHkDwVQfOY"
+              />
+              <div class="flex flex-col">
+                <span
+                  class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold"
+                  >SIGATEC</span
+                ><span
+                  class="font-label-uppercase text-[11px] text-secondary tracking-widest"
+                  >INFORMÁTICA</span
+                >
+              </div>
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+            >
+              Mais de 29 anos de tradição em Rio das Ostras e Região dos Lagos.
+              Loja física e assistência técnica completa em informática, venda
+              de hardware, suprimentos, materiais de rede e reparo especializado
+              de computadores e celulares.
+            </p>
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high border border-border-subtle font-label-uppercase text-label-uppercase text-secondary"
+                >Desde 1996</span
+              ><span
+                class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high border border-border-subtle font-label-uppercase text-label-uppercase text-primary-fixed-dim"
+                >Rio das Ostras - RJ</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-title-card text-title-card text-text-primary tracking-wide mb-space-xs"
+              >Navegação Rápida</span
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="inicio"
+              href="#"
+              >Início Institucional</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="sobre-nos"
+              href="#sobre-nos"
+              >Nossa História &amp; Valores</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="servicos-de-ti"
+              href="#servicos"
+              >Portfólio de Soluções</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="diferenciais"
+              href="#diferenciais"
+              >Metodologia &amp; Bancada</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="depoimentos"
+              href="#depoimentos"
+              >Avaliações Google Reviews</a
+            ><a
+              class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors flex items-center gap-1"
+              data-path="localizacao"
+              href="#localizacao"
+              ><span class="material-symbols-outlined text-[15px]"
+                >location_on</span
+              >Localização &amp; Loja Física</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-secondary transition-colors"
+              data-path="contato-e-orcamento"
+              href="#contato"
+              >Canal de Orçamento</a
+            >
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-title-card text-title-card text-text-primary tracking-wide mb-space-xs"
+              >Canais Corporativos</span
+            >
+            <p class="font-body-sm text-body-sm flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-secondary text-[18px]"
+                >call</span
+              >
+              +55 (22) 99803-6064
+            </p>
+            <p class="font-body-sm text-body-sm flex items-center gap-space-xs">
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-[18px]"
+                >chat</span
+              >
+              WhatsApp: +55 (22) 99803-6064
+            </p>
+            <p class="font-body-sm text-body-sm flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-secondary text-[18px]"
+                >mail</span
+              >
+              sigatec@gmail.com
+            </p>
+            <p class="font-body-sm text-body-sm flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-secondary text-[18px]"
+                >location_on</span
+              >
+              Rodovia Amaral Peixoto / Centro - Rio das Ostras - RJ
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-title-card text-title-card text-text-primary tracking-wide mb-space-xs"
+              >Atendimento &amp; Suporte</span
+            >
+            <div
+              class="p-space-md rounded-xl bg-surface-container-low border border-border-subtle flex flex-col gap-space-xs"
+            >
+              <span class="font-button-text text-button-text text-secondary"
+                >Bancada e Loja Física</span
+              >
+              <p class="font-body-sm text-body-sm">
+                Segunda a Sexta: 09h00 às 18h00
+              </p>
+              <p class="font-body-sm text-body-sm">Sábados: 09h00 às 13h00</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container/30 border border-border-subtle px-space-lg py-space-md rounded-xl"
+        >
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left"
+          >
+            © 2025 SIGATEC INFORMÁTICA. Mais de 29 anos de tradição. Rio das
+            Ostras - RJ.
+          </p>
+          <div class="flex items-center gap-space-lg">
+            <a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="#"
+              >Privacidade</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="#"
+              >Garantia Técnica</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="#"
+              >Termos de Serviço</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
